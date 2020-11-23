@@ -82,9 +82,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'postgres',
-        'USER':'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost',
+        'USER':'CMRITERP',
+        'PASSWORD':'CMRITERP',
+        'HOST':'database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com',
         
 
     }
