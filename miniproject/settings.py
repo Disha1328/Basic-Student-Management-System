@@ -26,7 +26,7 @@ SECRET_KEY = '*&fmp%jhxm-yolcf7-5-li!oqnc4=i_-b%u4c4c(my(azf$npz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ise-miniproject.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['ise-miniproject.herokuapp.com']
 
 
 # Application definition
