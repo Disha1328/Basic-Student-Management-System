@@ -6,7 +6,7 @@ usn=['1CR19IS101','1CR19IS102','1CR19IS103','1CR19IS104','1CR19IS105']
 def create_physics(list_1,list_2):
 #def create_physics_table(names,usn):
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS physics (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO physics VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -23,7 +23,7 @@ def create_chemistry(list_1,list_2):
 #def create_chemistry_table(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS chemistry (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO chemistry VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -38,7 +38,7 @@ def create_maths(list_1,list_2):
 #def create_maths_table(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS maths (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO maths VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -56,7 +56,7 @@ def create_english(list_1,list_2):
 #def create_english_table(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS english (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO english VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -73,7 +73,7 @@ def create_computer(list_1,list_2):
 #def create_computer_table(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS computer (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO computer VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -89,7 +89,7 @@ def create_physics_marks(list_1,list_2):
 #def create_physics_table_marks(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS physics (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO physics VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -105,7 +105,7 @@ def create_chemistry_marks(list_1,list_2):
 #def create_chemistry_table_marks(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS chemistry (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO chemistry VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -120,7 +120,7 @@ def create_maths_marks(list_1,list_2):
 #def create_maths_table_marks(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS maths (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         
@@ -139,7 +139,7 @@ def create_english_marks(list_1,list_2):
 #def create_english_table_marks(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS english (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO english VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -156,7 +156,7 @@ def create_computer_marks(list_1,list_2):
 #def create_computer_table_marks(names,usn):
 
     for i in range(len(names)):
-        conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+        conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
         cur=conn.cursor()
         cur.execute("CREATE TABLE IF NOT EXISTS computer (name TEXT,usn TEXT,classes_conducted TEXT,classes_attended TEXT,total_marks TEXT,obtained_marks TEXT)")
         #cur.execute("INSERT INTO computer VALUES ('%s','%s')" %(names[i],usn[i]))
@@ -179,7 +179,7 @@ def create_computer_marks(list_1,list_2):
 '''
 
 def fetch_data():
-    conn=psycopg2.connect("dbname='postgres' user='postgres' password='1234' host='localhost' port ='5432' ")
+    conn=psycopg2.connect("dbname='postgres' user='CMRITERP' password='CMRITERP' host='database-1.cvurrxgydpsj.ap-south-1.rds.amazonaws.com' port ='5432' ")
     cur1=conn.cursor()
     cur1.execute("SELECT * FROM MATHS")
     rows1=cur1.fetchall()
